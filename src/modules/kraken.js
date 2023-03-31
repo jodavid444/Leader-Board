@@ -5,4 +5,3 @@ export default class Kraken {
       this.scores.push(score);
     }
   }
-  
