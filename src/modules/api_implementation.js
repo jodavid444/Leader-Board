@@ -1,6 +1,6 @@
 export default class KrakenAPI {
     static baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
-  
+
     static getScores = async (gameID) => fetch(`${this.baseURL}/games/${gameID}/scores/`, {
       method: 'GET',
       headers: {
@@ -13,7 +13,7 @@ export default class KrakenAPI {
       }
       return null;
     });
-  
+
     static addNewScore = async (gameID, {
       user, score,
     }) => fetch(`${this.baseURL}/games/${gameID}/scores/`, {
@@ -31,5 +31,4 @@ export default class KrakenAPI {
       }
       return null;
     });
-  }
-  
+}
