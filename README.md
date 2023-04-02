@@ -36,7 +36,9 @@
 # 📖 [Leaderboard] <a name="about-project"></a>
 
 
-**[Leader Board]** is a demo web application that allows user to store the scores from your game and share the leaderboard with your friends.
+**[Leader Board]** Leaderboard is a web application that displays scores submitted by different players. It also allows users to submit your score thanks to the external Leaderboard API service..
+
+<img src="./assets/images/Screenshot 2023-04-02 002005.png" alt="">
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,7 +66,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
