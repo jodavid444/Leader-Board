@@ -35,10 +35,9 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
-
 **[Leader Board]** Leaderboard is a web application that displays scores submitted by different players. It also allows users to submit your score thanks to the external Leaderboard API service..
 
-<img src="./assets/images/Screenshot 2023-04-02 002005.png" alt="">
+<img src="assets/images/Screenshot 2023-04-02 002005.png" alt="">
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,12 +60,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](Under Construction)
+- Under Construction
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +98,6 @@ run this commands:
 ### Usage
 
 To run the project, execute the following command:
-
 
 ```sh
   npm install
@@ -140,7 +137,6 @@ To run tests, run the following command:
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🔭 Future Features <a name="future-features"></a>
 
