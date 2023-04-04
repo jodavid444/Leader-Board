@@ -119,7 +119,7 @@ To run tests, run the following command:
   npm run test
 ```
 
-## 👥 Authors <a name="authors"></a>
+## Authors <a name="authors"></a>
 
 👤 **Joseph David**
 
