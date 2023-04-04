@@ -35,7 +35,7 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
-**[Leader Board]** Leaderboard is a web application that displays scores submitted by different players. It also allows users to submit your score thanks to the external Leaderboard API service..
+Leaderboard is a web application that displays scores submitted by different players. It also allows users to submit your score thanks to the external Leaderboard API service..
 
 ![Screenshot 2023-04-02 002005](https://user-images.githubusercontent.com/100206273/229324479-955d95d5-6c97-404a-8245-7d9ab0dcd309.png)
 
