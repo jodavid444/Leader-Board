@@ -52,8 +52,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Add new to-do to a list]**
 - **[Mark a todo as completed]**
 - **[Delete all completed to-do's]**
@@ -61,8 +59,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - Under Construction
 
@@ -125,8 +121,6 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Joseph David**
 
 - GitHub: [@githubhandle](https://github.com/jodavid444)
@@ -135,12 +129,9 @@ To run tests, run the following command:
 
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/joseph-david-/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Drag and drop]**
 
@@ -156,15 +147,11 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project please leave a star. Thank you 🙏
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse for the great project idea
 
