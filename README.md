@@ -123,11 +123,11 @@ To run tests, run the following command:
 
 👤 **Joseph David**
 
-- GitHub: [@githubhandle](https://github.com/jodavid444)
+- GitHub: [@jodavid444](https://github.com/jodavid444)
 
-- Twitter: [@twitterhandle](https://twitter.com/jodavid444dave)
+- Twitter: [@jodavid444dave](https://twitter.com/jodavid444dave)
 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/joseph-david-/)
+- LinkedIn: [@joseph-david](https://www.linkedin.com/in/joseph-david-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
