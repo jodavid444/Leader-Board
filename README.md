@@ -49,6 +49,17 @@ Leaderboard is a web application that displays scores submitted by different pla
 
 - WebPack
 
+## Technologies used
+
+- Github
+
+- Git
+
+- WebHint
+
+- Stylelint
+
+- ESlint
 
 ### Key Features <a name="key-features"></a>
 
