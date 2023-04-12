@@ -11,9 +11,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -23,8 +21,9 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
+Leaderboard is a web application that displays scores submitted by different players. It also allows users to submit your score thanks to the external Leaderboard API service..
 
-**[Leader Board]** is a demo web application that allows user to store the scores from your game and share the leaderboard with your friends.
+![Screenshot 2023-04-02 002005](https://user-images.githubusercontent.com/100206273/229324479-955d95d5-6c97-404a-8245-7d9ab0dcd309.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -36,23 +35,28 @@
 
 - WebPack
 
+## Technologies used
+
+- Github
+
+- Git
+
+- WebHint
+
+- Stylelint
+
+- ESlint
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+- **[Users can add a new name and score]**
 
-- **[Add new to-do to a list]**
-- **[Mark a todo as completed]**
-- **[Delete all completed to-do's]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://jodavid444.github.io/Leader-Board/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,22 +83,30 @@ Clone this repository to your desired folder:
 run this commands:
 
 ```sh
-  cd my-project
- git clone https://github.com/jodavid444/Leaader-board-Project.git
+  cd Leader-Board
+ git clone https://github.com/jodavid444/Leaader-Board.git
+```
+
+### Install
+
+install this project using the following commands:
+
+1. Install Node Modules
+
+```sh
+  npm install
 ```
 
 ### Usage
 
 To run the project, execute the following command:
 
-
-```sh
-  npm install
-```
+1. Generate a full static production
 
 ```sh
   npm run build
 ```
+2. Start the development server
 
 ```sh
   npm start
@@ -105,34 +117,20 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  npm install
-```
-
-```sh
   npm run test
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
+## Authors <a name="authors"></a>
 
 👤 **Joseph David**
 
-- GitHub: [@githubhandle](https://github.com/jodavid444)
+- GitHub: [@jodavid444](https://github.com/jodavid444)
 
-- Twitter: [@twitterhandle](https://twitter.com/jodavid444dave)
+- Twitter: [@jodavid444dave](https://twitter.com/jodavid444dave)
 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/joseph-david-/)
+- LinkedIn: [@joseph-david](https://www.linkedin.com/in/joseph-david-/)
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Drag and drop]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,15 +144,11 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project please leave a star. Thank you 🙏
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse for the great project idea
 
