@@ -83,8 +83,8 @@ Clone this repository to your desired folder:
 run this commands:
 
 ```sh
-  cd Leader-Board
  git clone https://github.com/jodavid444/Leaader-Board.git
+   cd Leader-Board
 ```
 
 ### Install
