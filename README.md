@@ -12,7 +12,6 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -50,15 +49,14 @@ Leaderboard is a web application that displays scores submitted by different pla
 
 ### Key Features <a name="key-features"></a>
 
-- **[Add new to-do to a list]**
-- **[Mark a todo as completed]**
-- **[Delete all completed to-do's]**
+- **[Users can add a new name and score]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Under Construction
+- [Live Demo Link](https://jodavid444.github.io/Leader-Board/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,21 +83,30 @@ Clone this repository to your desired folder:
 run this commands:
 
 ```sh
-  cd my-project
- git clone https://github.com/jodavid444/Leaader-board-Project.git
+  cd Leader-Board
+ git clone https://github.com/jodavid444/Leaader-Board.git
+```
+
+### Install
+
+install this project using the following commands:
+
+1. Install Node Modules
+
+```sh
+  npm install
 ```
 
 ### Usage
 
 To run the project, execute the following command:
 
-```sh
-  npm install
-```
+1. Generate a full static production
 
 ```sh
   npm run build
 ```
+2. Start the development server
 
 ```sh
   npm start
@@ -110,12 +117,9 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  npm install
-```
-
-```sh
   npm run test
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors <a name="authors"></a>
 
@@ -127,11 +131,6 @@ To run tests, run the following command:
 
 - LinkedIn: [@joseph-david](https://www.linkedin.com/in/joseph-david-/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Drag and drop]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
