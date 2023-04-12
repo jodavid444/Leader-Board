@@ -8,19 +8,20 @@
         "build": "webpack",
         "watch": "webpack --watch",
         "start": "webpack serve --open",
+        "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/awais-amjed/leaderboard.git"
+        "url": "git+https://github.com/jodavid444/Leader-Board.git"
     },
     "keywords": [],
     "author": "",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/awais-amjed/leaderboard/issues"
+        "url": "https://github.com/jodavid444/Leader-Board/issues"
     },
-    "homepage": "https://github.com/awais-amjed/leaderboard#readme",
+    "homepage": "https://github.com/jodavid444/Leader-Board#readme",
     "devDependencies": {
         "babel-eslint": "^10.1.0",
         "css-loader": "^6.6.0",
