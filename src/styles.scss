@@ -120,7 +120,12 @@ main {
         justify-content: space-between;
         padding: $padding;
       }
+      
+      li:nth-child(2n + 1) {
+        background-color: $list-item-background;
+      }
 
+       development
       .centered-text {
         margin: auto;
         text-align: center;
