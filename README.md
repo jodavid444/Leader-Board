@@ -27,7 +27,7 @@ Leaderboard is a web application that displays scores submitted by different pla
 ![Screenshot 2023-04-02 002005](https://user-images.githubusercontent.com/100206273/229324479-955d95d5-6c97-404a-8245-7d9ab0dcd309.png)
 
 ## Mobile Preview
-<img src="../src/assets/images/leader-board-mobile.png" alt="">
+<img src="assets/images/leader-board-mobile.png" alt="">
 
 ## 🛠 Built With <a name="built-with"></a>
 
