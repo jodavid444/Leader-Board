@@ -124,7 +124,7 @@ To run the project, execute the following command:
   npm start
 ```
 
-If you are non a technical person you can download the zip file.
+### If you are non a technical person you can download the zip file.
 
 - To do that you have to go to the green button that says 'Code' and then press on it.
 - Choose the option 'Download Zip' and wait until it download.
