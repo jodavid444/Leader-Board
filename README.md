@@ -130,7 +130,7 @@ To run the project, execute the following command:
 - Choose the option 'Download Zip' and wait until it download.
 - Then you need to decompress it.
 - You will need to have win rar file software installed in your computer. If you don't have it you can download it from here https://www.win-rar.com/download.html?&L=0
-- Do double click on the Leaderboard.zip and choose a folder where to place all teh decompressed files.
+- Do double click on the Leaderboard.zip and choose a folder where to place all the decompressed files.
 - Once you are done decompressing, you can open the created folder.
 - In it you can double click on the index.html file and choose a browser to open it (For example google Chrome Browser).
 - Now you should be able to see the project.
