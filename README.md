@@ -68,7 +68,7 @@ Leaderboard is a web application that displays scores submitted by different pla
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://jodavid444.github.io/Leader-Board/)
+- [Live Demo Link](https://jodavid444.github.io/Leader-Board/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
