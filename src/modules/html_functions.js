@@ -19,4 +19,4 @@ const scoreFormEventListener = (kraken) => {
   scoreForm.reset();
 };
 
-export default scoreFormEventListener;
+export  {scoreFormEventListener};
