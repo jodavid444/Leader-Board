@@ -1,4 +1,5 @@
 import Score from './score.js';
+
 const scoreFormEventListener = (kraken) => {
   const scoreForm = document.getElementById('score-form');
   const newScore = new Score(scoreForm.elements.name.value, scoreForm.elements.score.value);
@@ -19,4 +20,4 @@ const scoreFormEventListener = (kraken) => {
   scoreForm.reset();
 };
 
-export default scoreFormEventListener;
+export { scoreFormEventListener };
