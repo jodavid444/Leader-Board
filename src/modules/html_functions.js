@@ -21,4 +21,3 @@ const scoreFormEventListener = (kraken) => {
 };
 
 export { scoreFormEventListener };
-
