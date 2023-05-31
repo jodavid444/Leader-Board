@@ -1,10 +1,10 @@
 export default class Score {
-    name;
+  name;
 
-    score;
+  score;
 
-    constructor(name, score) {
-      this.name = name;
-      this.score = score;
-    }
+  constructor(name, score) {
+    this.name = name;
+    this.score = score;
+  }
 }
