@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Kraken)\n/* harmony export */ });\nclass Kraken {\r\n  scores = [];\r\n\r\n  gameID = 'rXsiRnCQjdB5JNjPRRQN';\r\n\r\n  addNewScore = (score) => {\r\n    this.scores.push(score);\r\n  }\r\n\r\n  clearArray = () => {\r\n    this.scores = this.scores.splice(0, this.scores.length);\r\n  }\r\n}\n\n//# sourceURL=webpack://leaderboard/./src/modules/kraken.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Kraken)\n/* harmony export */ });\nclass Kraken {\r\n  scores = [];\r\n\r\n  gameID = '5LfqHaZOJBWoBRbTGCeS';\r\n\r\n  addNewScore = (score) => {\r\n    this.scores.push(score);\r\n  }\r\n\r\n  clearArray = () => {\r\n    this.scores = this.scores.splice(0, this.scores.length);\r\n  }\r\n}\n\n//# sourceURL=webpack://leaderboard/./src/modules/kraken.js?");
 
 /***/ }),
 
