@@ -23,7 +23,7 @@
 
 Leaderboard is a web application that displays scores submitted by different players. It also allows users to submit your score thanks to the external Leaderboard API service..
 
-![Screenshot 2023-04-02 002005](http://127.0.0.1:5500/Gitflow/img/Screenshot%202023-06-09%20105008.png)
+<img src="http://127.0.0.1:5500/Gitflow/img/Screenshot%202023-06-09%20105008.png" alt="screenshot-preview">
 
 ## 🛠 Built With <a name="built-with"></a>
 
