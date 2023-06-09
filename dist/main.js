@@ -116,17 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n/* harmony import */ var _modules_kraken_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/kraken.js */ \"./src/modules/kraken.js\");\n/* harmony import */ var _modules_html_functions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/html_functions.js */ \"./src/modules/html_functions.js\");\n/* harmony import */ var _assets_images_podium_3_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/podium (3).png */ \"./src/assets/images/podium (3).png\");\n/* harmony import */ var _assets_images_loading_bar_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/loading-bar.png */ \"./src/assets/images/loading-bar.png\");\n\r\n\r\n\r\n\r\n\r\n\r\nconst kraken = new _modules_kraken_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n\r\ndocument.getElementById('scores-table').innerHTML = `\r\n  <p class=\"centered-text\">Press Refresh to get the Latest Scores.</p>\r\n`;\r\n\r\ndocument.getElementById('score-form').addEventListener('submit', async (e) => {\r\n  e.preventDefault();\r\n  await (0,_modules_html_functions_js__WEBPACK_IMPORTED_MODULE_2__.scoreFormEventListener)(kraken);\r\n});\r\n\r\ndocument.getElementById('refresh-button').addEventListener('click', async (e) => {\r\n  e.preventDefault();\r\n  await (0,_modules_html_functions_js__WEBPACK_IMPORTED_MODULE_2__.refreshButtonEventListener)(kraken);\r\n});\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/modules/api_implementation.js":
-/*!*******************************************!*\
-  !*** ./src/modules/api_implementation.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ KrakenAPI)\n/* harmony export */ });\nclass KrakenAPI {\r\n  static baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';\r\n\r\n  static getScores = async (gameID) => fetch(`${this.baseURL}/games/${gameID}/scores/`, {\r\n    method: 'GET',\r\n    headers: {\r\n      'Content-type': 'application/json; charset=UTF-8',\r\n    },\r\n  }).then(async (response) => {\r\n    if (response.status === 200) {\r\n      const data = await response.json();\r\n      return data.result;\r\n    }\r\n    return null;\r\n  });\r\n\r\n  static addNewScore = async (gameID, {\r\n    user, score,\r\n  }) => fetch(`${this.baseURL}/games/${gameID}/scores/`, {\r\n    method: 'POST',\r\n    body: JSON.stringify({\r\n      user,\r\n      score,\r\n    }),\r\n    headers: {\r\n      'Content-type': 'application/json; charset=UTF-8',\r\n    },\r\n  }).then((response) => {\r\n    if (response.status === 201) {\r\n      return true;\r\n    }\r\n    return null;\r\n  });\r\n}\n\n//# sourceURL=webpack://leaderboard/./src/modules/api_implementation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\n/* harmony import */ var _modules_kraken_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/kraken.js */ \"./src/modules/kraken.js\");\n/* harmony import */ var _modules_html_functions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/html_functions.js */ \"./src/modules/html_functions.js\");\n\r\n\r\n\r\n\r\nconst kraken = new _modules_kraken_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n\r\nif (kraken.scores.length === 0) {\r\n  document.getElementById('scores-table').innerHTML = `\r\n        <p class=\"empty-table\">No Scores yet.</p>\r\n      `;\r\n}\r\n\r\ndocument.getElementById('score-form').addEventListener('submit', (e) => {\r\n  e.preventDefault();\r\n  (0,_modules_html_functions_js__WEBPACK_IMPORTED_MODULE_2__.scoreFormEventListener)(kraken);\r\n});\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
 
 /***/ }),
 
@@ -136,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"scoreFormEventListener\": () => (/* binding */ scoreFormEventListener),\n/* harmony export */   \"refreshButtonEventListener\": () => (/* binding */ refreshButtonEventListener)\n/* harmony export */ });\n/* harmony import */ var _score_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./score.js */ \"./src/modules/score.js\");\n/* harmony import */ var _api_implementation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./api_implementation.js */ \"./src/modules/api_implementation.js\");\n\r\n\r\n\r\nconst addRecentScore = (kraken, {\r\n  name, score,\r\n}) => {\r\n  const scoresTable = document.getElementById('scores-table');\r\n\r\n  const newScoreElement = document.createElement('li');\r\n  newScoreElement.innerHTML = `\r\n    <p>${name}</p><p>${score}</p>\r\n  `;\r\n\r\n  if (kraken.scores.length === 0) {\r\n    scoresTable.innerHTML = '';\r\n  }\r\n\r\n  scoresTable.appendChild(newScoreElement);\r\n  kraken.addNewScore(new _score_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](name, score));\r\n};\r\n\r\nconst scoreFormEventListener = async (kraken) => {\r\n  const scoreForm = document.getElementById('score-form');\r\n  const newScore = new _score_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](scoreForm.elements.name.value, scoreForm.elements.score.value);\r\n\r\n  document.getElementById('submit-button').innerText = 'Sending Score ...';\r\n  const isAddedToAPI = await _api_implementation_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addNewScore(kraken.gameID, {\r\n    user: newScore.name,\r\n    score: newScore.score,\r\n  });\r\n\r\n  document.getElementById('submit-button').innerText = 'Submit';\r\n\r\n  if (isAddedToAPI === null) {\r\n    // TODO Show Error\r\n    return;\r\n  }\r\n\r\n  addRecentScore(kraken, {\r\n    name: newScore.name,\r\n    score: newScore.score,\r\n  });\r\n\r\n  scoreForm.reset();\r\n};\r\n\r\nconst refreshButtonEventListener = async (kraken) => {\r\n  const scoresTable = document.getElementById('scores-table');\r\n  scoresTable.innerHTML = `\r\n    <p class=\"centered-text\"><img src=\"./assets/images/loading-bar.png\" alt=\"\" width=\"70\"></p>\r\n  `;\r\n\r\n  const data = await _api_implementation_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].getScores(kraken.gameID);\r\n  if (data === null) {\r\n    // TODO Show Error\r\n    return;\r\n  }\r\n\r\n  data.sort((a, b) => b.score - a.score);\r\n\r\n  kraken.clearArray();\r\n  scoresTable.innerHTML = '';\r\n\r\n  data.forEach((score) => {\r\n    addRecentScore(kraken, {\r\n      name: score.user,\r\n      score: score.score,\r\n    });\r\n  });\r\n\r\n  if (kraken.scores.length === 0) {\r\n    document.getElementById('scores-table').innerHTML = `\r\n      <p class=\"centered-text\">No Scores yet.</p>\r\n    `;\r\n  }\r\n};\r\n\r\n\n\n//# sourceURL=webpack://leaderboard/./src/modules/html_functions.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"scoreFormEventListener\": () => (/* binding */ scoreFormEventListener)\n/* harmony export */ });\n/* harmony import */ var _score_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./score.js */ \"./src/modules/score.js\");\n\r\n\r\nconst scoreFormEventListener = (kraken) => {\r\n  const scoreForm = document.getElementById('score-form');\r\n  const newScore = new _score_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](scoreForm.elements.name.value, scoreForm.elements.score.value);\r\n  const scoresTable = document.getElementById('scores-table');\r\n\r\n  const newScoreElement = document.createElement('li');\r\n  newScoreElement.innerHTML = `\r\n    <p>${newScore.name}: ${newScore.score}</p>\r\n  `;\r\n\r\n  if (kraken.scores.length === 0) {\r\n    scoresTable.innerHTML = '';\r\n  }\r\n\r\n  scoresTable.appendChild(newScoreElement);\r\n  kraken.addNewScore(newScore);\r\n\r\n  scoreForm.reset();\r\n};\r\n\r\n\n\n//# sourceURL=webpack://leaderboard/./src/modules/html_functions.js?");
 
 /***/ }),
 
@@ -157,26 +147,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Score)\n/* harmony export */ });\nclass Score {\r\n  name;\r\n\r\n  score;\r\n\r\n  constructor(name, score) {\r\n    this.name = name;\r\n    this.score = score;\r\n  }\r\n}\n\n//# sourceURL=webpack://leaderboard/./src/modules/score.js?");
-
-/***/ }),
-
-/***/ "./src/assets/images/loading-bar.png":
-/*!*******************************************!*\
-  !*** ./src/assets/images/loading-bar.png ***!
-  \*******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"assets/images/loading-bar.png\";\n\n//# sourceURL=webpack://leaderboard/./src/assets/images/loading-bar.png?");
-
-/***/ }),
-
-/***/ "./src/assets/images/podium (3).png":
-/*!******************************************!*\
-  !*** ./src/assets/images/podium (3).png ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"assets/images/podium (3).png\";\n\n//# sourceURL=webpack://leaderboard/./src/assets/images/podium_(3).png?");
 
 /***/ })
 
@@ -231,18 +201,6 @@ eval("module.exports = __webpack_require__.p + \"assets/images/podium (3).png\";
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -257,26 +215,6 @@ eval("module.exports = __webpack_require__.p + \"assets/images/podium (3).png\";
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
