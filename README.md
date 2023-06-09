@@ -31,6 +31,18 @@ Leaderboard is a web application that displays scores submitted by different pla
 
 <img src="/src/assets/images/mobile-preview.png" alt="mobile preview">
 
+## Learning objectives
+- Understand how to use medium-fidelity wireframes to create a UI.
+- Use callbacks and promises.
+- Learn how to use proper ES6 syntax.
+- Use ES6 modules to write modular JavaScript.
+- Use webpack to bundle JavaScript.
+- Send and receive data from an API.
+- Use API documentation.
+- Understand and use JSON.
+- Make JavaScript code asynchronous.
+
+
 ## 🛠 Built With <a name="built-with"></a>
 
 - HTML
