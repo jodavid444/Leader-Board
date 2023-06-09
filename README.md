@@ -23,27 +23,15 @@
 
 Leaderboard is a web application that displays scores submitted by different players. It also allows users to submit your score thanks to the external Leaderboard API service..
 
-## Desktop Preview
 ![Screenshot 2023-04-02 002005](https://user-images.githubusercontent.com/100206273/229324479-955d95d5-6c97-404a-8245-7d9ab0dcd309.png)
-
-## Learning objective 
-- Use callbacks and promises.
-- Learn how to use proper ES6 syntax.
-- Use ES6 modules to write modular JavaScript.
-- Use webpack to bundle JavaScript.
-- Send and receive data from an API.
-- Use API documentation.
-- Understand and use JSON.
-- Make JavaScript code asynchronous.
-
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- HTML (Hyper Text Language)
+- HTML
 
-- CSS (Cascadding Style Sheets)
+- CSS
 
-- Js (JavaScript)
+- JavaScript
 
 - WebPack
 
@@ -95,8 +83,8 @@ Clone this repository to your desired folder:
 run this commands:
 
 ```sh
+  cd Leader-Board
  git clone https://github.com/jodavid444/Leaader-Board.git
-   cd Leader-Board
 ```
 
 ### Install
@@ -123,18 +111,6 @@ To run the project, execute the following command:
 ```sh
   npm start
 ```
-
-### If you are non a technical person you can download the zip file.
-
-- To do that you have to go to the green button that says 'Code' and then press on it.
-- Choose the option 'Download Zip' and wait until it download.
-- Then you need to decompress it.
-- You will need to have win rar file software installed in your computer. If you don't have it you can download it from here https://www.win-rar.com/download.html?&L=0
-- Do double click on the Leaderboard.zip and choose a folder where to place all the decompressed files.
-- Once you are done decompressing, you can open the created folder.
-- In it you can double click on the index.html file and choose a browser to open it (For example google Chrome Browser).
-- Now you should be able to see the project.
-- Remember to use the mouse to navigate through the website. Also you can use the keys 'arrow up' and 'arrow down' of your keyboard to scroll up and down.
 
 ### Run tests
 
